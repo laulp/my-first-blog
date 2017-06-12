@@ -6,5 +6,7 @@ urlpatterns = [
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    # ESTO SIGNIFICA QUE PARA CADA URL QUE EMPIEZA CON ADMIN/, DJANGO ENCONTRARÁ SU CORRESPONDIENTE VIEW
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
 ]
